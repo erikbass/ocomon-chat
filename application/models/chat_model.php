@@ -20,7 +20,7 @@
 		}
 
 		function recuperaTodas(){
-			$this->db->select('mensagem, data');
+			$this->db->select('from, to, mensagem, data');
 			$this->db->order_by('data','asc');
 			$result = $this->db->get('chat');
 
