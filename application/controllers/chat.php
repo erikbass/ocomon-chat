@@ -12,7 +12,7 @@ class Chat extends CI_Controller {
 	public function index()
 	{
 		$data['mensagens'] = $this->chat_model->recuperaTodas();
-		$this->load->view('index', $data);
+		$this->load->view('chat/index', $data);
 	}
 
 	public function postar(){
