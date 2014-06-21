@@ -1,0 +1,26 @@
+.container{
+	margin-top: 20px;
+	max-width: 800px;
+}
+.bs-callout {
+    border-left: 3px solid #eee;
+    margin: 20px 0;
+    padding: 20px;
+}
+#frmChat{
+	margin: 10px;
+}
+#chatbox {  
+    height:300px;
+    overflow:auto; 
+} 
+.chat-line span{
+	border-top: 1px solid #ededed;
+    color: #666;
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 5px;
+    padding-top: 5px;
+    width: 100%;
+}
