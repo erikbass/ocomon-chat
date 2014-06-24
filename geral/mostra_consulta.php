@@ -131,6 +131,10 @@
 		print "</table>";//#EFEFE7
 		print "<div class='alerta' id='idAlerta'><table class='divAlerta'><tr><td colspan='2'><a align='center' onClick=\"exibeEscondeImg('idAlerta');\" title='".TRANS('FIELD_HIDE')."'><img src='".ICONS_PATH."/ok.png' width='16px' height='16px'><b>".$msg."</b></a></td></tr></table></div>";
 		//exit;
+
+		// Info se chat está disponível para o problema
+		echo "<style> #yesChatAlerta { left: 30%; position: absolute; top: 60px; width: 50%; z-index: 1;}</style>";
+		print "<div id='yesChatAlerta'><a class='button divAlerta' align='center' onClick=\"exibeEscondeImg('yesChatAlerta'); popupS('../../chat/index.php?oco=".$row['numero']."')\" title='".TRANS('FIELD_HIDE')."'><b>Gostaria de ser atendido via Chat</b></a></div>";
 	}
 
 	
