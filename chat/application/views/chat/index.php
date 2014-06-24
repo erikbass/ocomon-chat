@@ -8,6 +8,13 @@
 	</head>
 	<body>
 		<div class="container">
+			<?php session_start(); ?>
+			<div class="text-right">
+				Logado como: <strong style="text-transform: capitalize;"><?= $_SESSION['s_usuario'] ?></strong> <br>
+				<a href="../ocomon/geral/mostra_relatorio_individual_pdf.php?numero=<?= $_GET['oco'] ?>" target="_blank">
+					Referente à Ocorrência nº: <strong><?= $_GET['oco'] ?></strong>
+				</a>
+			</div>
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Suporte ao Usuário</h3>
